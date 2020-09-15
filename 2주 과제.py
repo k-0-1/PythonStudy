@@ -24,11 +24,26 @@ finally:
 
 #2. 다음과 같은 계산기 코드가 있을 때, 상세하게 살을 덧붙이고, 예외처리와 모듈화를 진행하라.
 
+if __name__ == "__main__" :
+  while 1 :
+    a = int(input()) # 숫자1 입력부
+    b = input() # 연산자 입력부
+    c = int(input()) # 숫자2 입력부
+    if b == "+" :
+     print(a, "+", c, "=", a+c)
+    elif b == "-" :
+      print(a, "-", c, "=", a-c)
+    elif b == "*" :
+      print(a, "*", c, "=", a*c)
+    elif b == "/" :
+      print(a, "/", c, "=", a/c)
+
 try:
-    import example2
-   
+    (c==0)
 except ZeroDivisionError as e:
     print("0으로 나누면 안돼요~")
+'''이 예외처리가 어디에 위치해야 알맞은 결과값이 나오나요?ㅠㅠ'''
+
 
 #3. 다음과 같이 문자열을 분석하는 함수를 만들어라. 내장함수를 이용하라|len,max,
 #input : python , output : 문자의 개수 : 6, 가장 큰 문자열 : y, 뒤집은 문자열 : nohtyp
